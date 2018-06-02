@@ -8,7 +8,7 @@ namespace Exercise2_Forloop
         {
             int count=0;
             int[] statuses = new int[] {1, 2, 3, 4};
-            int status=0;
+           
             
             for(count = 0; count < statuses.Length; count++)
             {

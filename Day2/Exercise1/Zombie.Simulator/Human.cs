@@ -1,13 +1,18 @@
 using System;
 namespace Zombie.Simulator
 {
-    public sealed class Human : Person
+    public sealed class Human : IPerson
     {
-      
-        public void run(int minutes)
+        public decimal DistanceTraveled { get; set; }
+
+        public void Run(decimal minutes)
         {
-            DistanceTraveled += minutes * 20;
+            DistanceTraveled += minutes * 1.5M;
         }
-       
+
+        public void Walk(decimal minutes)
+        {
+            DistanceTraveled += minutes * 1M;
+        }
     }
 }
