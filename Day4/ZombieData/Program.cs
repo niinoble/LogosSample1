@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace ZombieData
 {
@@ -6,7 +8,13 @@ namespace ZombieData
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            StatusRepository repository = new StatusRepository();
+            List<Status> statuses = repository.GetAll();
+            foreach (Status status in statuses)
+            {
+                Console.WriteLine(status.FirstName +" "+status.LastName + " "+
+                status.StatusDescription);
+            }
         }
     }
 }

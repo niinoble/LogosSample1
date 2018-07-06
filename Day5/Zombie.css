@@ -1,0 +1,54 @@
+#header
+{
+    text-align: center;
+}
+
+.paragraph
+{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+        
+}
+.text{
+    color:red;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.design{
+   color:blue;
+}
+
+th
+{
+    color: lightgray;
+    
+}
+.mainbox, #header{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width:30%;
+}
+
+input,select,button{
+    margin: 5px;
+}
+
+body {
+    background-image: url("img/zombiebackground.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    opacity: 0.95;
+}
+
+
+#shadow {
+    width: 70%;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
